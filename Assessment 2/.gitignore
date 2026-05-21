@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.vscode/
+*.pyc
+*.pyo
+*.pyd
+*.log
+dist/
+build/
+*.egg-info/
