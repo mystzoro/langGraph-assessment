@@ -63,10 +63,15 @@ START -> fetch_stock_data -> calculate_indicators -> generate_recommendation -> 
 
 ```text
 langGraph-assessment/
-|
-|-- Assessment 1/
-|   \-- weather_agent/
-|
+├── .gitignore
+├── README.md
+├── Assessment 1/
+│   ├── weather_agent_debug.ipynb
+│   └── weather_agent/
+│       ├── main.py
+│       ├── graph.py
+│       ├── requirements.txt
+│       └── components/
 \-- Assessment 2/
     |-- components/
     |-- tests/
