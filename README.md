@@ -66,21 +66,31 @@ langGraph-assessment/
 ├── .gitignore
 ├── README.md
 ├── Assessment 1/
-│   ├── weather_agent_debug.ipynb
+│   ├── weather_agent_demo.ipynb
+│   ├── DEBUG_SUMMARY.md
 │   └── weather_agent/
 │       ├── main.py
 │       ├── graph.py
 │       ├── requirements.txt
+│       ├── README.md
 │       └── components/
-\-- Assessment 2/
-    |-- components/
-    |-- tests/
-    |-- graph.py
-    |-- main.py
-    |-- README.md
-    |-- requirements.txt
-    \-- stock_agent_demo.ipynb
+└── Assessment 2/
+    ├── conftest.py
+    ├── DEBUG_SUMMARY.md
+    ├── graph.py
+    ├── main.py
+    ├── README.md
+    ├── requirements.txt
+    ├── stock_agent_demo.ipynb
+    ├── components/
+    └── tests/
 ```
+
+## Assessment 1 Files
+
+- [Weather agent notebook](Assessment%201/weather_agent/weather_agent_demo.ipynb)
+- [Weather agent README](Assessment%201/weather_agent/README.md)
+- [Weather agent debug summary](Assessment%201/weather_agent/DEBUG_SUMMARY.md)
 
 ## Setup
 
