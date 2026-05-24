@@ -29,3 +29,7 @@ python main.py
 ## Notes
 - The project uses `requests` for HTTP calls and `pydantic` for optional schema validation.
 - If `langgraph` is not available or incompatible, the project falls back to a sequential executor that preserves the original node functions and order.
+
+## Deliverables
+- `weather_agent_demo.ipynb` shows the fixed agent end to end with mocked API responses.
+- `DEBUG_SUMMARY.md` documents the bugs that were found and the fixes that were applied.
