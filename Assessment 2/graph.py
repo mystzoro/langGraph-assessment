@@ -18,6 +18,7 @@ class StockAnalysisState(TypedDict, total=False):
     """Shared state passed between LangGraph nodes."""
 
     ticker_symbol: str
+    ticker_validation: str
     stock_data: object
     indicators: dict[str, float]
     recommendation: str

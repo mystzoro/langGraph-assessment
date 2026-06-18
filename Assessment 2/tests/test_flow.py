@@ -92,6 +92,9 @@ def test_graph_happy_path(monkeypatch: pytest.MonkeyPatch) -> None:
 
     assert final_state["recommendation"] in {"BUY", "HOLD", "SELL"}
     assert "STOCK MARKET ANALYSIS REPORT" in final_state["report"]
+    assert "Ticker Validation: Passed" in final_state["report"]
+    assert "Analysis Context:" in final_state["report"]
+    assert "History Window:" in final_state["report"]
     assert final_state.get("error") is None
 
 
@@ -104,4 +107,5 @@ def test_graph_invalid_ticker(monkeypatch: pytest.MonkeyPatch) -> None:
     final_state = agent.invoke({"ticker_symbol": "INVALID TICKER"})
 
     assert final_state.get("error")
+    assert "Ticker Validation: Failed" in final_state["report"]
     assert "Invalid ticker symbol" in final_state["report"]

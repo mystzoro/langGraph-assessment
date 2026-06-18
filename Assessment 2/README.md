@@ -1,10 +1,10 @@
 # Stock Market Analysis Agent
 
-This project is a LangGraph-based stock analysis tool that fetches recent market data for a ticker, calculates technical indicators, and generates a readable BUY, HOLD, or SELL recommendation.
+This project is a LangGraph-based stock analysis tool that validates a ticker, fetches recent market data for it, calculates technical indicators, and generates a readable BUY, HOLD, or SELL recommendation with analysis context.
 
 ## Project Description
 
-The agent accepts a stock ticker symbol, downloads the latest 60 days of price history with `yfinance`, calculates SMA 10, SMA 20, and RSI 14, then formats the result into a clean report.
+The agent accepts a stock ticker symbol, validates it, downloads the latest 60 days of price history with `yfinance`, calculates SMA 10, SMA 20, and RSI 14, then formats the result into a report with validation status and analysis context.
 
 ## Features
 
@@ -46,7 +46,16 @@ STOCK MARKET ANALYSIS REPORT
 ==================================
 
 Stock Symbol: AAPL
-Current Price: $159.00
+Ticker Validation: Passed: normalized to AAPL
+
+Analysis Context:
+- Data Source: yfinance daily history
+- Requested History: 60 days
+- History Window: 2026-04-20 to 2026-06-18
+- Price Change Over Window: $59.00 (+59.00%)
+- Indicator Windows: SMA 10, SMA 20, RSI 14
+
+Latest Close: $159.00
 
 Technical Indicators:
 - SMA 10: 154.50

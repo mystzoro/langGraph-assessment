@@ -4,7 +4,8 @@
 
 - Built the agent as a LangGraph pipeline with four explicit stages: fetch, calculate, recommend, and format.
 - Kept shared state narrow and typed so each node only mutates the fields it owns.
-- Centralized validation and output formatting in helper functions to avoid duplicated logic across nodes and tests.
+- Centralized ticker validation in a helper and surfaced its result in the final report so the analysis includes explicit input-quality context.
+- Expanded the report to include history range, window change, and indicator settings instead of only a minimal formatted snapshot.
 
 ## Error Handling
 
